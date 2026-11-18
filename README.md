@@ -113,6 +113,27 @@ Then visit `http://localhost:8000` in your web browser.
 
 ---
 
+## ☁️ Deploying to Vercel
+
+This website can be deployed directly to [Vercel](https://vercel.com) with **zero configuration and zero build steps**:
+
+### Method A: Deploy via GitHub
+1. Push this repository to your GitHub account.
+2. Sign in to [vercel.com](https://vercel.com) and click **"Add New..." > "Project"**.
+3. Select your repository and click **Deploy**.
+4. Vercel automatically detects the static site and publishes it globally in seconds with free SSL.
+
+### Method B: Deploy via Vercel CLI
+Run the following command in the project root:
+```bash
+npx vercel
+```
+Follow the quick CLI prompts to deploy directly from your local terminal.
+
+The included [`vercel.json`](vercel.json) automatically enables clean URLs (e.g. `/menu` as well as `/menu.html`).
+
+---
+
 ## 📝 Placeholder Content & Customization Guide
 
 All restaurant details, dishes, and photography currently represent high-fidelity sample content. To customize the site for a live restaurant:

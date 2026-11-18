@@ -1011,18 +1011,19 @@ blockquote {
 }
 
 .menu-controls {
-  padding: var(--space-8) 0;
+  padding: 1.5rem 0;
   background-color: var(--color-bg-primary);
   border-bottom: 1px solid var(--color-border);
-  position: sticky;
-  top: var(--header-height);
-  z-index: var(--z-dropdown);
+  position: relative;
+  z-index: 10;
 }
 
 .menu-controls .container {
   display: flex;
-  flex-direction: column;
-  gap: var(--space-5);
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  flex-wrap: wrap;
 }
 
 /* Filter Buttons */
@@ -1098,12 +1099,17 @@ blockquote {
   box-shadow: 0 0 0 3px rgba(212, 130, 10, 0.15);
 }
 
-/* Menu Grid */
+/* Menu Section & Grid */
+.menu-section {
+  padding: 2.5rem 0 5rem;
+  background-color: var(--color-bg-primary);
+}
+
 .menu-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   gap: var(--space-6);
-  padding: var(--space-10) 0;
+  padding: 0;
 }
 
 /* Menu item card specialization */
