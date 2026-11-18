@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="The Urban Plate – Contemporary dining in the heart of the city.">
+  <title>The Urban Plate – Contemporary Restaurant</title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header class="site-header" id="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo" aria-label="The Urban Plate – Home">
+        <span class="logo-name">The Urban Plate</span>
+        <span class="logo-tagline">Contemporary Dining</span>
+      </a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Toggle navigation">
+          <span class="hamburger">☰</span>
+        </button>
+        <ul class="nav-links" id="nav-links" role="list">
+          <li><a href="index.html" class="nav-link active">Home</a></li>
+          <li><a href="menu.html" class="nav-link">Menu</a></li>
+          <li><a href="about.html" class="nav-link">About Us</a></li>
+          <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+        <button id="dark-mode-toggle" class="dark-mode-btn" aria-label="Toggle dark mode">🌙</button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ===== HERO SECTION ===== -->
+    <section class="hero" style="background-image: url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1920&q=80')">
+      <div class="hero-overlay"></div>
+      <div class="hero-content container">
+        <span class="hero-eyebrow fade-in">Welcome to The Urban Plate</span>
+        <h1 class="hero-title fade-in">Where Every Bite<br>Tells a Story</h1>
+        <p class="hero-subtitle fade-in">Contemporary cuisine crafted from the finest seasonal ingredients, served in an atmosphere of warmth and elegance.</p>
+        <div class="hero-cta fade-in">
+          <a href="menu.html" class="btn-primary">Explore Menu</a>
+          <a href="contact.html" class="btn-secondary">Book a Table</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== INTRODUCTION SECTION ===== -->
+    <section class="intro-section">
+      <div class="container intro-inner">
+        <div class="intro-text">
+          <span class="section-eyebrow">Our Story</span>
+          <h2 class="section-title">A Passion for Flavour, <br>A Love for Community</h2>
+          <p>Nestled in the heart of London, The Urban Plate was born from a simple belief: great food has the power to bring people together. Since opening our doors, we have been dedicated to celebrating the finest seasonal British and international produce, transforming it into dishes that surprise, delight, and linger long in the memory.</p>
+          <p>Our kitchen is led by a team of passionate chefs who believe that every element on the plate matters — from the soil our vegetables are grown in, to the hands that plate each course with care. We work with local farmers, independent suppliers, and artisan producers to ensure every meal is a genuine expression of quality and provenance.</p>
+          <a href="about.html" class="btn-outline">Discover Our Story</a>
+        </div>
+        <div class="intro-image">
+          <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=600&h=700&fit=crop&auto=format" alt="Chefs preparing food in the Urban Plate kitchen" loading="lazy">
+          <div class="intro-image-badge">
+            <span class="badge-number">10+</span>
+            <span class="badge-label">Years of Excellence</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FEATURED DISHES SECTION ===== -->
+    <section class="featured-dishes">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">From Our Kitchen</span>
+          <h2 class="section-title">Our Signature Dishes</h2>
+          <p class="section-subtitle">Each dish is a celebration of flavour, crafted with seasonal ingredients and presented with artistry.</p>
+        </div>
+        <div class="dishes-grid">
+
+          <!-- Dish Card 1 -->
+          <article class="dish-card">
+            <div class="dish-image-wrap">
+              <img src="https://images.unsplash.com/photo-1541529086526-db283c563270?w=600&h=400&fit=crop&auto=format" alt="Truffle Arancini" loading="lazy">
+              <span class="dish-category">Starters</span>
+            </div>
+            <div class="dish-body">
+              <h3 class="dish-name">Truffle Arancini</h3>
+              <p class="dish-description">Golden, crispy risotto balls infused with wild black truffle, served with a silky Parmesan cream and a drizzle of truffle oil. A decadent start to any meal.</p>
+              <div class="dish-footer">
+                <span class="dish-price">£10</span>
+                <a href="menu.html" class="dish-link">View Menu →</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Dish Card 2 -->
+          <article class="dish-card">
+            <div class="dish-image-wrap">
+              <img src="https://images.unsplash.com/photo-1544025162-d76694265947?w=600&h=400&fit=crop&auto=format" alt="Slow-Braised Lamb Shank" loading="lazy">
+              <span class="dish-category">Mains</span>
+            </div>
+            <div class="dish-body">
+              <h3 class="dish-name">Slow-Braised Lamb Shank</h3>
+              <p class="dish-description">Tender British lamb shank slow-braised in red wine and rosemary until fall-off-the-bone perfect. Served with creamy minted mash and roasted seasonal vegetables.</p>
+              <div class="dish-footer">
+                <span class="dish-price">£24</span>
+                <a href="menu.html" class="dish-link">View Menu →</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Dish Card 3 -->
+          <article class="dish-card">
+            <div class="dish-image-wrap">
+              <img src="https://images.unsplash.com/photo-1587314168485-3236d6710814?w=600&h=400&fit=crop&auto=format" alt="Mango & Cardamom Kulfi" loading="lazy">
+              <span class="dish-category">Desserts</span>
+            </div>
+            <div class="dish-body">
+              <h3 class="dish-name">Mango &amp; Cardamom Kulfi</h3>
+              <p class="dish-description">A fragrant and exotic frozen dessert made with Alphonso mango purée, warming cardamom, and pistachios. A refreshing finale that transports you to warmer shores.</p>
+              <div class="dish-footer">
+                <span class="dish-price">£8</span>
+                <a href="menu.html" class="dish-link">View Menu →</a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+        <div class="section-cta">
+          <a href="menu.html" class="btn-primary">View Full Menu</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SPECIAL OFFER / HIGHLIGHT BANNER ===== -->
+    <section class="highlight-banner">
+      <div class="container highlight-inner">
+        <div class="highlight-content">
+          <span class="highlight-eyebrow">Limited Availability</span>
+          <h2 class="highlight-title">Chef's Tasting Menu</h2>
+          <p class="highlight-desc">An unforgettable culinary journey through five thoughtfully curated courses, each showcasing the best of the season. Expertly paired wine flights available on request.</p>
+          <div class="highlight-details">
+            <div class="highlight-detail-item">
+              <span class="highlight-icon">🍽️</span>
+              <div>
+                <strong>5 Courses</strong>
+                <span>£45 per person</span>
+              </div>
+            </div>
+            <div class="highlight-detail-item">
+              <span class="highlight-icon">📅</span>
+              <div>
+                <strong>Available</strong>
+                <span>Tuesday – Thursday evenings</span>
+              </div>
+            </div>
+          </div>
+          <a href="contact.html" class="btn-gold">Reserve Your Experience</a>
+        </div>
+        <div class="highlight-image">
+          <img src="https://images.unsplash.com/photo-1529543544282-ea669407fca3?w=600&h=500&fit=crop&auto=format" alt="Chef's tasting menu elegantly plated" loading="lazy">
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== WHY CHOOSE US ===== -->
+    <section class="why-us">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">Why Dine With Us</span>
+          <h2 class="section-title">The Urban Plate Difference</h2>
+          <p class="section-subtitle">We go beyond the plate — every visit is crafted to be extraordinary from the moment you arrive.</p>
+        </div>
+        <div class="features-grid">
+
+          <div class="feature-tile">
+            <div class="feature-icon" aria-hidden="true">🌿</div>
+            <h3 class="feature-title">Locally Sourced</h3>
+            <p class="feature-desc">We partner with trusted local farmers and artisan producers to bring the freshest, most sustainable ingredients to your plate every single day.</p>
+          </div>
+
+          <div class="feature-tile">
+            <div class="feature-icon" aria-hidden="true">👨‍🍳</div>
+            <h3 class="feature-title">Expert Chefs</h3>
+            <p class="feature-desc">Our culinary team brings decades of collective experience from Michelin-starred kitchens across Europe, channelling world-class technique into every dish.</p>
+          </div>
+
+          <div class="feature-tile">
+            <div class="feature-icon" aria-hidden="true">🍷</div>
+            <h3 class="feature-title">Curated Wine List</h3>
+            <p class="feature-desc">Our sommelier has assembled an exceptional cellar of over 200 labels — from classic Old World estates to exciting New World discoveries — to perfectly complement your meal.</p>
+          </div>
+
+          <div class="feature-tile">
+            <div class="feature-icon" aria-hidden="true">⭐</div>
+            <h3 class="feature-title">Award-Winning Service</h3>
+            <p class="feature-desc">Recognised by the Good Food Guide and Time Out London, our warm, attentive service ensures every guest leaves feeling genuinely cared for and valued.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== OPENING HOURS TEASER ===== -->
+    <section class="hours-teaser">
+      <div class="container hours-inner">
+        <div class="hours-content">
+          <span class="section-eyebrow">We're Open</span>
+          <h2 class="section-title">Come Visit Us</h2>
+          <p class="hours-address">📍 42 Culinary Lane, London EC1A 1BB</p>
+          <ul class="hours-list" aria-label="Opening hours">
+            <li>
+              <span class="hours-day">Monday – Friday</span>
+              <span class="hours-time">12pm – 10pm</span>
+            </li>
+            <li>
+              <span class="hours-day">Saturday</span>
+              <span class="hours-time">11am – 11pm</span>
+            </li>
+            <li>
+              <span class="hours-day">Sunday</span>
+              <span class="hours-time">12pm – 9pm</span>
+            </li>
+          </ul>
+          <div class="hours-actions">
+            <a href="contact.html" class="btn-primary">Get Directions</a>
+            <a href="contact.html" class="btn-outline">Make a Reservation</a>
+          </div>
+        </div>
+        <div class="hours-map-placeholder" aria-hidden="true">
+          <img src="https://images.unsplash.com/photo-1424847651672-bf20a4b0982b?w=560&h=420&fit=crop&auto=format" alt="Restaurant exterior at 42 Culinary Lane" loading="lazy">
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="logo-name">The Urban Plate</span>
+        <p>Contemporary cuisine in the heart of the city.</p>
+        <div class="social-links">
+          <a href="#" aria-label="Facebook">📘</a>
+          <a href="#" aria-label="Instagram">📸</a>
+          <a href="#" aria-label="Twitter">🐦</a>
+        </div>
+      </div>
+      <div class="footer-nav">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <h4>Contact Us</h4>
+        <p>42 Culinary Lane<br>London EC1A 1BB</p>
+        <p>📞 +44 20 7946 0958</p>
+        <p>✉️ hello@theurbanplate.co.uk</p>
+      </div>
+    </div>
+    <div class="footer-bar">
+      <div class="container">
+        <p>&copy; <span id="current-year"></span> The Urban Plate. All rights reserved. | Sample content only.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>

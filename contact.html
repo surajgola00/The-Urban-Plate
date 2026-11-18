@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact The Urban Plate and make a table reservation. Find our address, opening hours, phone number, and use our online reservation form.">
+  <title>Contact &amp; Reservations – The Urban Plate</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header class="site-header" id="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo" aria-label="The Urban Plate – Home">
+        <span class="logo-name">The Urban Plate</span>
+        <span class="logo-tagline">Contemporary Dining</span>
+      </a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Toggle navigation">
+          <span class="hamburger">☰</span>
+        </button>
+        <ul class="nav-links" id="nav-links" role="list">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="menu.html" class="nav-link">Menu</a></li>
+          <li><a href="about.html" class="nav-link">About Us</a></li>
+          <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+        <button id="dark-mode-toggle" class="dark-mode-btn" aria-label="Toggle dark mode">🌙</button>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+
+    <!-- ===== PAGE HERO (MINI) ===== -->
+    <section class="page-hero page-hero--mini" aria-label="Contact &amp; Reservations hero" style="background-image:url('https://images.unsplash.com/photo-1424847651672-bf20a4b0982b?w=1600&h=600&fit=crop&auto=format')">
+      <div class="page-hero-overlay" aria-hidden="true"></div>
+      <div class="container page-hero-content">
+        <h1 class="page-hero-title">Contact &amp; Reservations</h1>
+        <p class="page-hero-subtitle">We'd love to hear from you.</p>
+      </div>
+    </section>
+
+    <!-- ===== CONTACT INFO + MAP SECTION ===== -->
+    <section class="contact-section section-padding" aria-labelledby="contact-section-heading">
+      <div class="container">
+        <h2 class="section-heading visually-hidden" id="contact-section-heading">Contact Information</h2>
+        <div class="contact-grid">
+
+          <!-- Left Column: Contact Information -->
+          <div class="contact-info">
+            <div class="contact-info-item">
+              <span class="contact-icon" aria-hidden="true">📍</span>
+              <div>
+                <h4>Address</h4>
+                <p>42 Culinary Lane, London EC1A 1BB</p>
+              </div>
+            </div>
+
+            <div class="contact-info-item">
+              <span class="contact-icon" aria-hidden="true">📞</span>
+              <div>
+                <h4>Phone</h4>
+                <p><a href="tel:+442079460958">+44 20 7946 0958</a></p>
+              </div>
+            </div>
+
+            <div class="contact-info-item">
+              <span class="contact-icon" aria-hidden="true">✉️</span>
+              <div>
+                <h4>Email</h4>
+                <p><a href="mailto:hello@theurbanplate.co.uk">hello@theurbanplate.co.uk</a></p>
+              </div>
+            </div>
+
+            <!-- Opening Hours -->
+            <div class="opening-hours">
+              <h4>Opening Hours</h4>
+              <table class="hours-table">
+                <tbody>
+                  <tr>
+                    <th scope="row">Monday – Friday</th>
+                    <td>12:00 pm – 10:00 pm</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Saturday</th>
+                    <td>11:00 am – 11:00 pm</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Sunday</th>
+                    <td>12:00 pm – 9:00 pm</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- Right Column: Map Placeholder -->
+          <div class="map-placeholder" role="img" aria-label="Map showing restaurant location at 42 Culinary Lane, London">
+            <div class="map-placeholder-inner">
+              <span class="map-icon">🗺️</span>
+              <p>42 Culinary Lane, London EC1A 1BB</p>
+              <p class="map-note">Map integration coming soon</p>
+            </div>
+          </div>
+
+        </div><!-- /.contact-grid -->
+      </div><!-- /.container -->
+    </section>
+
+    <!-- ===== RESERVATION FORM SECTION ===== -->
+    <section class="reservation-section section-padding" aria-labelledby="reservation-heading">
+      <div class="container">
+        <h2 class="section-heading" id="reservation-heading">Reserve a Table</h2>
+        <p class="section-subheading">Fill in the form below to submit a reservation request.</p>
+
+        <form id="reservation-form" class="reservation-form" novalidate aria-label="Table reservation form">
+
+          <!-- Full Name -->
+          <div class="form-group">
+            <label for="full-name">Full Name <span class="required" aria-label="required">*</span></label>
+            <input
+              type="text"
+              id="full-name"
+              name="full-name"
+              autocomplete="name"
+              required
+              aria-required="true"
+              aria-describedby="full-name-error"
+              placeholder="e.g. Jane Smith"
+            >
+            <span class="form-error" id="full-name-error" role="alert" aria-live="polite"></span>
+          </div>
+
+          <!-- Phone -->
+          <div class="form-group">
+            <label for="phone">Phone Number <span class="required" aria-label="required">*</span></label>
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              autocomplete="tel"
+              required
+              aria-required="true"
+              aria-describedby="phone-error"
+              placeholder="e.g. 07911 123 456"
+            >
+            <span class="form-error" id="phone-error" role="alert" aria-live="polite"></span>
+          </div>
+
+          <!-- Number of Guests -->
+          <div class="form-group">
+            <label for="guests">Number of Guests <span class="required" aria-label="required">*</span></label>
+            <select
+              id="guests"
+              name="guests"
+              required
+              aria-required="true"
+              aria-describedby="guests-error"
+            >
+              <option value="">Select number of guests</option>
+              <option value="1">1 Guest</option>
+              <option value="2">2 Guests</option>
+              <option value="3">3 Guests</option>
+              <option value="4">4 Guests</option>
+              <option value="5">5 Guests</option>
+              <option value="6">6 Guests</option>
+              <option value="7">7 Guests</option>
+              <option value="8">8 Guests</option>
+              <option value="9">9 Guests</option>
+              <option value="10">10 Guests</option>
+              <option value="11">11 Guests</option>
+              <option value="12">12 Guests (large party)</option>
+            </select>
+            <span class="form-error" id="guests-error" role="alert" aria-live="polite"></span>
+          </div>
+
+          <!-- Reservation Date -->
+          <div class="form-group">
+            <label for="date">Reservation Date <span class="required" aria-label="required">*</span></label>
+            <input
+              type="date"
+              id="date"
+              name="date"
+              required
+              aria-required="true"
+              aria-describedby="date-error"
+            >
+            <span class="form-error" id="date-error" role="alert" aria-live="polite"></span>
+          </div>
+
+          <!-- Preferred Time -->
+          <div class="form-group">
+            <label for="time">Preferred Time <span class="required" aria-label="required">*</span></label>
+            <select
+              id="time"
+              name="time"
+              required
+              aria-required="true"
+              aria-describedby="time-error"
+            >
+              <option value="">Select a time</option>
+              <option value="12:00">12:00 pm – Lunch</option>
+              <option value="12:30">12:30 pm – Lunch</option>
+              <option value="13:00">1:00 pm – Lunch</option>
+              <option value="13:30">1:30 pm – Lunch</option>
+              <option value="18:00">6:00 pm – Dinner</option>
+              <option value="18:30">6:30 pm – Dinner</option>
+              <option value="19:00">7:00 pm – Dinner</option>
+              <option value="19:30">7:30 pm – Dinner</option>
+              <option value="20:00">8:00 pm – Dinner</option>
+              <option value="20:30">8:30 pm – Dinner</option>
+              <option value="21:00">9:00 pm – Dinner</option>
+            </select>
+            <span class="form-error" id="time-error" role="alert" aria-live="polite"></span>
+          </div>
+
+          <!-- Special Requests (optional) -->
+          <div class="form-group">
+            <label for="special-requests">Special Requests <span class="optional">(optional)</span></label>
+            <textarea
+              id="special-requests"
+              name="special-requests"
+              rows="3"
+              placeholder="Dietary requirements, special occasions, accessibility needs..."
+            ></textarea>
+          </div>
+
+          <button type="submit" class="btn-primary submit-btn">Submit Reservation Request</button>
+
+        </form>
+      </div><!-- /.container -->
+    </section>
+
+    <!-- ===== FAQ ACCORDION SECTION ===== -->
+    <section class="faq-section section-padding" aria-labelledby="faq-heading">
+      <div class="container">
+        <h2 class="section-heading" id="faq-heading">Frequently Asked Questions</h2>
+
+        <div class="faq-list" id="faq-list">
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>Do I need to book in advance?</span>
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer" hidden>
+              <p>We recommend booking at least 48 hours in advance, especially for weekend evenings. Walk-ins are welcome subject to availability, but we cannot guarantee a table without a reservation during busy periods.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>What are your opening hours?</span>
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer" hidden>
+              <p>We are open Monday to Friday from 12:00 pm to 10:00 pm, Saturday from 11:00 am to 11:00 pm, and Sunday from 12:00 pm to 9:00 pm. Kitchen closes one hour before closing time.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>Do you cater for dietary requirements?</span>
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer" hidden>
+              <p>Yes, we offer a wide range of vegetarian, vegan, and gluten-aware options. Please inform us of any allergies or dietary requirements when making your reservation, and our kitchen team will do their best to accommodate you.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>Is there parking nearby?</span>
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer" hidden>
+              <p>We are located near Farringdon and Barbican tube stations (a short walk). Street parking is available on Culinary Lane after 6:30 pm and on weekends. We recommend using public transport or a taxi service.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>Can I host a private event or celebration?</span>
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer" hidden>
+              <p>Absolutely! We have a private dining room available for groups of up to 20 guests. We can arrange bespoke menus, decorations, and special arrangements for birthdays, anniversaries, and corporate events. Please contact us to discuss your requirements.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>Do you have a children's menu?</span>
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer" hidden>
+              <p>Yes, we have a dedicated children's menu available for guests under 12 years old. We also provide high chairs and are happy to prepare smaller portions of main menu items for younger guests. Please let us know when booking.</p>
+            </div>
+          </div>
+
+        </div><!-- /#faq-list -->
+      </div><!-- /.container -->
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="logo-name">The Urban Plate</span>
+        <p>Contemporary cuisine in the heart of the city.</p>
+        <div class="social-links">
+          <a href="#" aria-label="Facebook">📘</a>
+          <a href="#" aria-label="Instagram">📸</a>
+          <a href="#" aria-label="Twitter">🐦</a>
+        </div>
+      </div>
+      <div class="footer-nav">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <h4>Contact Us</h4>
+        <p>42 Culinary Lane<br>London EC1A 1BB</p>
+        <p>📞 +44 20 7946 0958</p>
+        <p>✉️ hello@theurbanplate.co.uk</p>
+      </div>
+    </div>
+    <div class="footer-bar">
+      <div class="container">
+        <p>&copy; <span id="current-year"></span> The Urban Plate. All rights reserved. | Sample content only.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== FAQ ACCORDION SCRIPT ===== -->
+  <script>
+    // FAQ Accordion
+    document.querySelectorAll('.faq-question').forEach(button => {
+      button.addEventListener('click', () => {
+        const faqItem = button.closest('.faq-item');
+        const answer = faqItem.querySelector('.faq-answer');
+        const icon = button.querySelector('.faq-icon');
+        const isOpen = !answer.hidden;
+
+        // Close all
+        document.querySelectorAll('.faq-item').forEach(item => {
+          item.querySelector('.faq-answer').hidden = true;
+          item.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
+          item.querySelector('.faq-icon').textContent = '+';
+          item.classList.remove('open');
+        });
+
+        // Open clicked if it was closed
+        if (!isOpen) {
+          answer.hidden = false;
+          button.setAttribute('aria-expanded', 'true');
+          icon.textContent = '−';
+          faqItem.classList.add('open');
+        }
+      });
+    });
+  </script>
+
+  <!-- ===== EXTERNAL SCRIPTS ===== -->
+  <script src="js/main.js" defer></script>
+  <script src="js/reservation.js" defer></script>
+
+</body>
+</html>

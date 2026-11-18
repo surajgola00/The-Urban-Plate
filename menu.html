@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Explore The Urban Plate menu — fresh seasonal ingredients crafted with passion. Browse starters, mains, desserts, and beverages." />
+    <title>Menu – The Urban Plate</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- External Stylesheets -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+  </head>
+
+  <body>
+    <!-- ===== HEADER ===== -->
+    <header class="site-header" id="site-header">
+      <div class="container header-inner">
+        <a href="index.html" class="logo" aria-label="The Urban Plate – Home">
+          <span class="logo-name">The Urban Plate</span>
+          <span class="logo-tagline">Contemporary Dining</span>
+        </a>
+        <nav class="main-nav" aria-label="Main navigation">
+          <button
+            class="nav-toggle"
+            aria-expanded="false"
+            aria-controls="nav-links"
+            aria-label="Toggle navigation"
+          >
+            <span class="hamburger">☰</span>
+          </button>
+          <ul class="nav-links" id="nav-links" role="list">
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="menu.html" class="nav-link active">Menu</a></li>
+            <li><a href="about.html" class="nav-link">About Us</a></li>
+            <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+            <li><a href="contact.html" class="nav-link">Contact</a></li>
+          </ul>
+          <button id="dark-mode-toggle" class="dark-mode-btn" aria-label="Toggle dark mode">🌙</button>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <!-- ===== PAGE HERO ===== -->
+      <section class="page-hero menu-hero" aria-label="Menu hero banner" style="background-image:url('https://images.unsplash.com/photo-1565299507177-b0ac66763828?w=1600&h=600&fit=crop&auto=format')">
+        <div class="page-hero-overlay"></div>
+        <div class="container page-hero-content">
+          <h1 class="page-hero-title">Our Menu</h1>
+          <p class="page-hero-subtitle">Fresh seasonal ingredients, crafted with passion</p>
+        </div>
+      </section>
+
+      <!-- ===== MENU CONTROLS ===== -->
+      <section class="menu-controls section-padding" aria-label="Menu search and filters">
+        <div class="container">
+          <!-- Search Bar -->
+          <div class="search-wrapper">
+            <label for="menu-search" class="visually-hidden">Search dishes</label>
+            <input
+              type="search"
+              id="menu-search"
+              placeholder="🔍 Search dishes..."
+              class="search-bar"
+              aria-label="Search menu items"
+            />
+          </div>
+
+          <!-- Category Filters -->
+          <div class="menu-filters" role="group" aria-label="Filter by category">
+            <button class="filter-btn active" data-category="all">All</button>
+            <button class="filter-btn" data-category="starters">Starters</button>
+            <button class="filter-btn" data-category="mains">Mains</button>
+            <button class="filter-btn" data-category="desserts">Desserts</button>
+            <button class="filter-btn" data-category="beverages">Beverages</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== MENU GRID ===== -->
+      <section class="menu-section section-padding" aria-label="Menu items">
+        <div class="container">
+          <div
+            id="menu-grid"
+            class="menu-grid"
+            aria-live="polite"
+            aria-label="Menu items"
+          >
+            <!-- Populated by menu.js -->
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div class="footer-brand">
+          <span class="logo-name">The Urban Plate</span>
+          <p>Contemporary cuisine in the heart of the city.</p>
+          <div class="social-links">
+            <a href="#" aria-label="Facebook">📘</a>
+            <a href="#" aria-label="Instagram">📸</a>
+            <a href="#" aria-label="Twitter">🐦</a>
+          </div>
+        </div>
+        <div class="footer-nav">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h4>Contact Us</h4>
+          <p>42 Culinary Lane<br />London EC1A 1BB</p>
+          <p>📞 +44 20 7946 0958</p>
+          <p>✉️ hello@theurbanplate.co.uk</p>
+        </div>
+      </div>
+      <div class="footer-bar">
+        <div class="container">
+          <p>
+            &copy; <span id="current-year"></span> The Urban Plate. All rights reserved. | Sample content only.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- ===== SCRIPTS ===== -->
+    <script src="js/main.js" defer></script>
+    <script src="js/menu.js" defer></script>
+  </body>
+</html>
