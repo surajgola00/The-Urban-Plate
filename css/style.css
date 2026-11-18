@@ -3504,12 +3504,15 @@ textarea {
   border-radius: var(--radius-lg);
   overflow: hidden;
   box-shadow: var(--shadow-md);
+  min-height: 380px;
 }
 
-.hours-map-placeholder img {
+.hours-map-placeholder img,
+.hours-map-placeholder iframe {
   width: 100%;
-  height: 380px;
-  object-fit: cover;
+  height: 100%;
+  min-height: 380px;
+  border: none;
   display: block;
 }
 
@@ -3777,27 +3780,25 @@ textarea {
   font-weight: var(--fw-semibold);
 }
 
-.map-placeholder {
-  background: var(--color-bg-muted);
-  border: 2px dashed var(--color-border);
+.map-placeholder,
+.map-container {
+  width: 100%;
+  min-height: 420px;
+  background-color: var(--color-bg-muted);
   border-radius: var(--radius-lg);
-  min-height: 320px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  gap: var(--space-3);
-  text-align: center;
-  padding: var(--space-8);
+  border: 1px solid var(--color-border);
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
 }
 
-.map-icon {
-  font-size: 3rem;
-}
-
-.map-note {
-  font-size: var(--fs-sm);
-  color: var(--color-text-muted);
+.map-placeholder iframe,
+.map-container iframe {
+  width: 100%;
+  height: 100%;
+  min-height: 420px;
+  border: none;
+  display: block;
 }
 
 /* Reservation form */
