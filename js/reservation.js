@@ -156,7 +156,7 @@ function validatePhone() {
     return false;
   }
   if (!PHONE_REGEX.test(value)) {
-    showError('phone', 'Please enter a valid phone number (e.g. 07911 123456 or +44 7911 123456).');
+    showError('phone', 'Please enter a valid phone number (e.g. +91 98765 43210 or 011 2338 0958).');
     return false;
   }
 

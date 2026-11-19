@@ -170,63 +170,10 @@
 
 
 /* ============================================================
-   6. DARK MODE TOGGLE
+   6. THEME SETUP (LIGHT MODE DEFAULT)
    ============================================================ */
-(function initDarkMode() {
-  const STORAGE_KEY = 'theme';
-  const DARK_VALUE  = 'dark';
-  const LIGHT_VALUE = 'light';
-
-  // Default to signature restaurant light theme unless user explicitly saved a preference
-  const savedTheme  = localStorage.getItem(STORAGE_KEY);
-  const initialTheme = savedTheme || LIGHT_VALUE;
-
-  if (initialTheme === DARK_VALUE) {
-    document.documentElement.setAttribute('data-theme', DARK_VALUE);
-  } else {
-    document.documentElement.setAttribute('data-theme', LIGHT_VALUE);
-  }
-
-  /** Update the toggle button icon to reflect the current theme */
-  function syncToggleIcon(button, isDark) {
-    button.textContent = isDark ? '☀️' : '🌙';
-    button.setAttribute('aria-label', isDark ? 'Switch to light mode' : 'Switch to dark mode');
-    button.setAttribute('title',      isDark ? 'Switch to light mode' : 'Switch to dark mode');
-  }
-
-  document.addEventListener('DOMContentLoaded', () => {
-    // Support a toggle button already in the HTML (id="dark-mode-toggle")
-    // or create one and append it to the header / nav.
-    let toggle = document.getElementById('dark-mode-toggle');
-
-    if (!toggle) {
-      toggle = document.createElement('button');
-      toggle.id = 'dark-mode-toggle';
-      toggle.className = 'dark-mode-toggle';
-
-      // Try to place it inside the header; fall back to body
-      const header = document.querySelector('header') || document.body;
-      header.appendChild(toggle);
-    }
-
-    // Set correct icon on page load
-    const isDarkOnLoad = document.documentElement.getAttribute('data-theme') === DARK_VALUE;
-    syncToggleIcon(toggle, isDarkOnLoad);
-
-    toggle.addEventListener('click', () => {
-      const isDark = document.documentElement.getAttribute('data-theme') === DARK_VALUE;
-
-      if (isDark) {
-        document.documentElement.setAttribute('data-theme', LIGHT_VALUE);
-        localStorage.setItem(STORAGE_KEY, LIGHT_VALUE);
-        syncToggleIcon(toggle, false);
-      } else {
-        document.documentElement.setAttribute('data-theme', DARK_VALUE);
-        localStorage.setItem(STORAGE_KEY, DARK_VALUE);
-        syncToggleIcon(toggle, true);
-      }
-    });
-  });
+(function initTheme() {
+  document.documentElement.setAttribute('data-theme', 'light');
 })();
 
 

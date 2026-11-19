@@ -183,10 +183,10 @@ const menuItems = [
   },
   {
     id: 18,
-    name: "Sticky Toffee Pudding",
+    name: "Shahi Kesar Phirni & Date Pudding",
     category: "desserts",
     description:
-      "The ultimate British comfort dessert — moist date sponge drenched in a rich butterscotch toffee sauce, served with clotted cream ice cream.",
+      "A royal Indian indulgence — rich Kashmiri saffron phirni paired with warm spiced date sponge and topped with silver vark and crushed pistachios.",
     price: "₹345",
     image: "https://images.unsplash.com/photo-1551024601-bec78aea704b?w=400&h=300&fit=crop&auto=format",
     tags: ["vegetarian"],

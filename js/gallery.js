@@ -70,8 +70,8 @@ const galleryImages = [
   },
   {
     src: "https://images.unsplash.com/photo-1577219491135-ce391730fb2c?w=800&h=600&fit=crop&auto=format",
-    alt: "Live cooking demonstration by Executive Chef",
-    caption: "Chef's Table Experience"
+    alt: "Live cooking demonstration and culinary artistry curated by Mehak",
+    caption: "Mehak's Chef Table Experience"
   },
   {
     src: "https://images.unsplash.com/photo-1470124182917-cc6e71b22ecc?w=800&h=600&fit=crop&auto=format",
