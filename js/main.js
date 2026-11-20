@@ -188,3 +188,37 @@
     }
   });
 })();
+
+/* ============================================================
+   8. FAQ ACCORDION
+   ============================================================ */
+(function initFaqAccordion() {
+  document.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('.faq-question').forEach(button => {
+      button.addEventListener('click', () => {
+        const faqItem = button.closest('.faq-item');
+        if (!faqItem) return;
+        const answer = faqItem.querySelector('.faq-answer');
+        const icon = button.querySelector('.faq-icon');
+        const isOpen = !answer.hidden;
+
+        document.querySelectorAll('.faq-item').forEach(item => {
+          const a = item.querySelector('.faq-answer');
+          const q = item.querySelector('.faq-question');
+          const ic = item.querySelector('.faq-icon');
+          if (a) a.hidden = true;
+          if (q) q.setAttribute('aria-expanded', 'false');
+          if (ic) ic.textContent = '+';
+          item.classList.remove('open');
+        });
+
+        if (!isOpen) {
+          answer.hidden = false;
+          button.setAttribute('aria-expanded', 'true');
+          if (icon) icon.textContent = '−';
+          faqItem.classList.add('open');
+        }
+      });
+    });
+  });
+})();

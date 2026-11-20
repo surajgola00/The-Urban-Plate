@@ -13,7 +13,6 @@
 
   <!-- Stylesheets -->
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/responsive.css">
 </head>
 <body>
 
@@ -354,35 +353,6 @@
       </div>
     </div>
   </footer>
-
-  <!-- ===== FAQ ACCORDION SCRIPT ===== -->
-  <script>
-    // FAQ Accordion
-    document.querySelectorAll('.faq-question').forEach(button => {
-      button.addEventListener('click', () => {
-        const faqItem = button.closest('.faq-item');
-        const answer = faqItem.querySelector('.faq-answer');
-        const icon = button.querySelector('.faq-icon');
-        const isOpen = !answer.hidden;
-
-        // Close all
-        document.querySelectorAll('.faq-item').forEach(item => {
-          item.querySelector('.faq-answer').hidden = true;
-          item.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
-          item.querySelector('.faq-icon').textContent = '+';
-          item.classList.remove('open');
-        });
-
-        // Open clicked if it was closed
-        if (!isOpen) {
-          answer.hidden = false;
-          button.setAttribute('aria-expanded', 'true');
-          icon.textContent = '−';
-          faqItem.classList.add('open');
-        }
-      });
-    });
-  </script>
 
   <!-- ===== EXTERNAL SCRIPTS ===== -->
   <script src="js/main.js" defer></script>
